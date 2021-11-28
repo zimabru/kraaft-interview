@@ -1,0 +1,76 @@
+::-webkit-scrollbar{
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.Exchange__wrapper{
+    overflow: hidden;
+    margin:1%;
+    max-width: 80vw;
+    margin-top: 1%;
+}
+.Exchange__container{
+    position: relative;
+    padding:1px;
+    background: var(--MESSAGE_BACKGROUND_REPLY);
+    border-radius: 0 15px 15px 15px;
+    box-shadow: 0px 2px 2px #b5b7c1 ;
+  
+}
+.Exchange__date{
+    margin: .5% 1%;
+    color: var(--MESSAGE_DATE);
+  
+}
+.Exchange__username{
+    margin:0.5%;
+}
+.Exchange__imageWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.Exchange__image{
+    object-fit: cover;
+    min-width: 100%;
+    border-radius: 0 15px 15px 15px;
+}
+.Exchange__text{
+margin-left: 2%;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.Exchange__wrapper.self{
+    position:absolute;
+    text-align: right;
+    position: relative;
+    justify-items: flex-end;
+    align-self:end;
+}
+.Exchange__wrapper.self > .Exchange__container{
+    background-color: var(--MESSAGE_BACKGROUND_SELF);
+    text-align: left;
+    border-radius: 15px 0 15px 15px;
+    overflow: hidden;
+}
+
+.Exchange__wrapper.self .Exchange__imageWrapper.Exchange__image{
+    object-fit: cover;
+    min-width: 100%;
+    border-radius:0;
+    width: 50px;
+}
+.Exchange__image.self{
+    border-radius:15px 0 15px 15px ;
+}
+/*.Exchange__wrapper.self .Exchange__text{
+    margin-left: auto;
+}*/
+
+.scroll{
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+}
+
